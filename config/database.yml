@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MySQL. Versions 5.5.8 and up are supported.
 #
 # Install the MySQL driver
@@ -26,6 +27,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
   database: rails_dev
 
 # As with config/credentials.yml, you never want to store sensitive information,
