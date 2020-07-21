@@ -1,3 +1,4 @@
+
 # MySQL. Versions 5.5.8 and up are supported.
 #
 # Install the MySQL driver
@@ -27,6 +28,7 @@ development:
 test:
   <<: *default
   database: rails_dev
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

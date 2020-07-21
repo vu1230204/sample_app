@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
+
 gem 'bootstrap-sass', '3.4.1'
+
+
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
@@ -8,6 +11,9 @@ ruby '2.7.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4'
+
+# Use sqlite3 as the database for Active Record
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -22,10 +28,10 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+gem 'bootstrap-sass', '3.4.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -49,6 +55,8 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem "rubocop", "~> 0.74.0", require: false
+  gem "rubocop-rails", "~> 2.3.2", require: false
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
